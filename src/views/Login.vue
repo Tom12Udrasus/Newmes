@@ -1,13 +1,73 @@
 <template>
-  <div class="d-flex justify-center">
-    <v-card width="600px" class="mt-12 pa-10">
-      <v-card-title>Войдите в аккаунт</v-card-title>
+  <div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Username" />
+    </div>
 
-      <v-text-field label="Введите логин" v-model="login" outlined></v-text-field>
+    <div class="textbox">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" />
+    </div>
 
-      <v-text-field label="Введите пароль" v-model="password" outlined></v-text-field>
-
-      <v-btn @click="authenticate">Войти</v-btn>
-    </v-card>
+    <input type="button" class="btn" value="Sign in" />
   </div>
 </template>
+<style scoped>
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: cover;
+}
+.login-box {
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.login-box h1 {
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn {
+  width: 100%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+</style>

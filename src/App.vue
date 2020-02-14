@@ -23,6 +23,34 @@
         </v-list-item-content>
       </v-list-item>
 
+      <v-list-item link to="Neus">
+        <v-list-item-action>
+          <v-icon>mdi-hand-heart</v-icon>
+        </v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title class="text-left">Timeline</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item link to="Frends">
+        <v-list-item-action>
+          <v-icon>mdi-account-multiple</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>Frends</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item link to="Musik">
+        <v-list-item-action>
+          <v-icon>mdi-music-box</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>My music</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
       <v-list-item link to="Login">
         <v-list-item-action>
           <v-icon>mdi-login</v-icon>
@@ -32,26 +60,13 @@
           <v-list-item-title class="text-left">Login</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-
-      <v-list-item link>
-        <v-list-item-action>
-          <v-icon>mdi-account-multiple</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title>Frends</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-      <v-list-item link>
-        <v-list-item-action>
-          <v-icon>mdi-account-search-outline</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title>Fiend friend</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
       <!-- </v-list> -->
     </v-navigation-drawer>
-
+    <v-content class="px-12 py-3">
+      <v-container fluid>
+        <router-view />
+      </v-container>
+    </v-content>
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Estrampava</v-toolbar-title>

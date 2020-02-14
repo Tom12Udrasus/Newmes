@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
+import Neus from "../views/Neus.vue";
+import Musik from "../views/Musik.vue";
 
 Vue.use(VueRouter);
 
@@ -14,6 +16,14 @@ const routes = [
   {
     path: "/login",
     component: Login
+  },
+  {
+    path: "/Musik",
+    component: Musik
+  },
+  {
+    path: "/Neus",
+    component: Neus
   },
   {
     path: "/about",
