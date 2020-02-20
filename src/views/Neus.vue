@@ -10,7 +10,7 @@
       <v-icon>mdi-close</v-icon>
     </v-system-bar>-->
 
-    <v-toolbar color="indigo" dark>
+    <v-toolbar  dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
       <!-- <v-toolbar-title>Discover</v-toolbar-title> -->
