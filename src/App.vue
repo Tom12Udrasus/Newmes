@@ -67,10 +67,12 @@
         <router-view />
       </v-container>
     </v-content>
+
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Estrampava</v-toolbar-title>
     </v-app-bar>
+
     <v-footer app>
       <span>&copy; ceberpank</span>
     </v-footer>

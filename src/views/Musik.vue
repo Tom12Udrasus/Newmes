@@ -9,7 +9,6 @@
 
       <v-icon>mdi-close</v-icon>
     </v-system-bar>
-
     <v-app-bar dark color="pink">
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
